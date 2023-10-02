@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyWeatherPlus</string>
+    <string name="api_key">425532784dd64135043c293173b893e5</string>
+</resources>

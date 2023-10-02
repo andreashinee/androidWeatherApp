@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="30dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/fondo2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNavbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="El Tiempo"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:background="#E4ADED"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNavbar"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewWeatherIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/sol" />
+
+        <TextView
+            android:id="@+id/textViewTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@id/imageViewWeatherIcon"
+            android:gravity="center_vertical"
+            android:text="25°C"
+            android:textColor="@android:color/black"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTemperature"
+            android:layout_marginTop="-1dp"
+            android:gravity="center"
+            android:text="Nombre de la Localización"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewLocation"
+            android:text="Lunes 01/01/2023"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutForecast"
+        android:layout_width="match_parent"
+        android:layout_marginTop="220dp"
+        android:layout_height="460dp"
+        android:orientation="vertical"
+        android:background="#85DEAFE6">
+
+
+        <include layout="@layout/activity_future_days" />
+
+        <include layout="@layout/activity_future_days" />
+
+        <include layout="@layout/activity_future_days" />
+
+        <include layout="@layout/activity_future_days" />
+
+        <include layout="@layout/activity_future_days" />
+
+    </LinearLayout>
+
+</RelativeLayout>

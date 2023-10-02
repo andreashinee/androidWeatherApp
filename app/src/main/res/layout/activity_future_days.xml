@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/imageViewForecastIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/sol" />
+
+    <TextView
+        android:id="@+id/textViewForecastDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lunes 23/05/2023"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/textViewForecastTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25°C"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:layout_marginStart="8dp" />
+
+</LinearLayout>
